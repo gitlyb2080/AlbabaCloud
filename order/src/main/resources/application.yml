@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: order
+  cloud:
+    nacos:
+      discovery:
+        username: naocs
+        password: nacos
+        server-addr: 8.131.89.93:8848
+        namespace: public
+server:
+  port: 9001
