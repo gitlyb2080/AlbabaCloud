@@ -6,7 +6,7 @@ spring:
       discovery:
         username: naocs
         password: nacos
-        server-addr: 8.131.89.93:8848
+        server-addr: 127.0.0.1:8848
         namespace: public
 server:
   port: 9000
