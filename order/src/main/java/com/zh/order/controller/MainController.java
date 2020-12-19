@@ -17,4 +17,8 @@ public class MainController {
     public String main(@PathVariable String message){
         return "hello world" + " =======> " + message;
     }
+    @GetMapping("hi1")
+    public String main(){
+        return "hello world" + " =======> hi1";
+    }
 }
