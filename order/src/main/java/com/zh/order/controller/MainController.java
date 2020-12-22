@@ -1,5 +1,6 @@
 package com.zh.order.controller;
 
+import entity.Users;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,9 @@ public class MainController {
     }
     @GetMapping("hi1")
     public String main(){
-        return "hello world" + " =======> hi1";
+        Users users = new Users();
+        users.setId(1);
+        users.setName("1");
+        return "hello world" + " =======> hi1" + users.toString();
     }
 }
